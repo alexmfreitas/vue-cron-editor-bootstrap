@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import VueCronEditorBootstrap from "./components/VueCronEditorBootstrap.vue";
+import VueCronEditorBootstrap from "./VueCronEditorBootstrap.vue";
 
 export default {
     name: "App",

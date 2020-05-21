@@ -172,7 +172,7 @@ import {
 } from "bootstrap-vue";
 
 export default {
-    name: "VueCronEditorBuefy",
+    name: "VueCronEditorBootstrap",
     mixins: [vueCronEditorMixin],
     components: {
         BFormInput,

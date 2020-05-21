@@ -1,12 +1,16 @@
 {
   "name": "vue-cron-editor-bootstrap",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
+  "main": "dist/vueCronEditorBootstrap.umd.js",
+  "module": "dist/vueCronEditorBootstrap.esm.js",
+  "unpkg": "dist/vueCronEditorBootstrap.min.js",
+  "browser": {
+    "./sfc": "src/VueCronEditorBootstrap.vue"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint",
-    "release:samples": "vue-cli-service build && gh-pages -d dist"
+    "build:npm": "vue-cli-service build --target lib --name vueCronEditorBootstrap src/VueCronEditorBootstrap.vue"
   },
   "dependencies": {
     "bootstrap-vue": "^2.14.0",
