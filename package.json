@@ -1,7 +1,7 @@
 {
-  "name": "vue-cron-editor",
+  "name": "vue-cron-editor-bootstrap",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "test:unit": "vue-cli-service test:unit",
