@@ -6,7 +6,7 @@
                     :preserveStateOnSwitchToAdvanced="true"
                     v-model="sample1CronExpression"
                 ></VueCronEditorBootstrap>
-                {{ sample1CronExpression }}
+                <b-form-input v-model="sample1CronExpression" />
             </main>
         </div>
     </div>
@@ -14,11 +14,14 @@
 
 <script>
 import VueCronEditorBootstrap from "./VueCronEditorBootstrap.vue";
-
+import {
+    BFormInput
+} from "bootstrap-vue";
 export default {
     name: "App",
     components: {
-        VueCronEditorBootstrap
+        VueCronEditorBootstrap,
+        BFormInput
     },
     data: () => ({
         sample1CronExpression: "4 4 * * 0,2,3,5"

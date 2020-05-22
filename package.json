@@ -13,7 +13,6 @@
     "build:npm": "vue-cli-service build --target lib --name vueCronEditorBootstrap src/VueCronEditorBootstrap.vue"
   },
   "dependencies": {
-    "bootstrap-vue": "^2.14.0",
     "core-js": "^3.6.5",
     "cron-validator": "^1.1.1",
     "cronstrue": "^1.94.0",
@@ -41,7 +40,8 @@
     "sass-loader": "^8.0.0",
     "standard-version": "^8.0.0",
     "typescript": "~3.5.3",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "bootstrap-vue": "^2.14.0"
   },
   "author": "alexmfreitas",
   "license": "MIT",
