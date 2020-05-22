@@ -1,20 +1,15 @@
 <template>
     <b-tabs v-model="activeTab" @input="reset" content-class="mt-3">
         <b-tab :value="0" :title="_$t('minutes')" class="minutes-tab">
-            <b-row>
-                <b-col size="12">
-                    <b-form inline>
-                        <label class="mr-sm-2">{{ _$t("every") }}</label>
-                        <b-form-input
-                            type="number"
-                            v-model="editorData.minuteInterval"
-                        />
-                        <label class="mr-sm-2 ml-sm-2">{{
-                            _$t("mminutes")
-                        }}</label>
-                    </b-form>
-                </b-col>
-            </b-row>
+            <b-form inline>
+                <label class="mr-sm-2">{{ _$t("every") }}</label>
+                <b-form-input
+                    type="number"
+                    v-model="editorData.minuteInterval"
+                    class="small-input"
+                />
+                <label class="mr-sm-2 ml-sm-2">{{ _$t("mminutes") }}</label>
+            </b-form>
         </b-tab>
         <b-tab :value="1" :title="_$t('hourly')" class="hourly-tab">
             <b-row>
@@ -24,6 +19,7 @@
                         <b-form-input
                             type="number"
                             v-model="editorData.hourInterval"
+                            class="small-input"
                         />
                         <label class="mr-sm-2 ml-sm-2">{{
                             _$t("hoursOnMinute")
@@ -33,6 +29,7 @@
                             max="59"
                             min="0"
                             v-model="editorData.minutes"
+                            class="small-input"
                         />
                     </b-form>
                 </b-col>
@@ -46,6 +43,7 @@
                         <b-form-input
                             type="number"
                             v-model="editorData.dayInterval"
+                            class="small-input"
                         />
                         <label class="mr-sm-2 ml-sm-2">{{
                             _$t("daysAt")
@@ -119,13 +117,18 @@
                 <b-col size="12">
                     <b-form inline>
                         <label class="mr-sm-2">{{ _$t("onThe") }}</label>
-                        <b-form-input type="number" v-model="editorData.day" />
+                        <b-form-input
+                            type="number"
+                            v-model="editorData.day"
+                            class="small-input"
+                        />
                         <label class="mr-sm-2 ml-sm-2">{{
                             _$t("dayOfEvery")
                         }}</label>
                         <b-form-input
                             type="number"
                             v-model="editorData.monthInterval"
+                            class="small-input"
                         /><label class="mr-sm-2 ml-sm-2">{{
                             _$t("monthsAt")
                         }}</label>
@@ -229,4 +232,8 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.form-inline .form-control.small-input {
+    width: 50px;
+}
+</style>
