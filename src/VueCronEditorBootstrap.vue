@@ -49,9 +49,8 @@
                             _$t("daysAt")
                         }}</label>
                         <b-form-timepicker
-                            value="dateTime"
+                            :value="dateTime"
                             :hour12="false"
-                            v-model="editorData.time"
                             @input="setDateTime"
                         />
                     </b-form>
@@ -67,45 +66,55 @@
                             value="0"
                             class="mr-sm-2"
                             v-model="editorData.days"
+                            switch
                             >{{ _$t("sun") }}</b-form-checkbox
                         >
                         <b-form-checkbox
                             value="1"
                             class="mr-sm-2"
                             v-model="editorData.days"
+                            switch
                             >{{ _$t("mon") }}</b-form-checkbox
                         >
                         <b-form-checkbox
                             value="2"
                             class="mr-sm-2"
                             v-model="editorData.days"
+                            switch
                             >{{ _$t("tue") }}</b-form-checkbox
                         >
                         <b-form-checkbox
                             value="3"
                             class="mr-sm-2"
                             v-model="editorData.days"
+                            switch
                             >{{ _$t("wed") }}</b-form-checkbox
                         >
                         <b-form-checkbox
                             value="4"
                             class="mr-sm-2"
                             v-model="editorData.days"
+                            switch
                             >{{ _$t("thu") }}</b-form-checkbox
                         >
                         <b-form-checkbox
                             value="5"
                             class="mr-sm-2"
                             v-model="editorData.days"
+                            switch
                             >{{ _$t("fri") }}</b-form-checkbox
                         >
-                        <b-form-checkbox value="6" v-model="editorData.days">{{
-                            _$t("sat")
-                        }}</b-form-checkbox>
+                        <b-form-checkbox
+                            value="6"
+                            v-model="editorData.days"
+                            switch
+                            >{{ _$t("sat") }}</b-form-checkbox
+                        >
 
                         <label class="mr-sm-2 ml-sm-2">{{ _$t("at") }}</label>
                         <b-form-timepicker
-                            v-model="editorData.time"
+                            :value="dateTime"
+                            @input="setDateTime"
                             :hour12="false"
                         />
                     </b-form>
@@ -133,7 +142,8 @@
                             _$t("monthsAt")
                         }}</label>
                         <b-form-timepicker
-                            v-model="editorData.time"
+                            :value="dateTime"
+                            @input="setDateTime"
                             :hour12="false"
                         />
                     </b-form>
@@ -208,9 +218,7 @@ export default {
     },
     computed: {
         dateTime() {
-            let dateTime = new Date();
-            dateTime.setHours(this.editorData.hours);
-            dateTime.setMinutes(this.editorData.minutes);
+            let dateTime = `${this.editorData.hours}:${this.editorData.minutes}:00`;
             return dateTime;
         }
     },
@@ -223,7 +231,7 @@ export default {
             if (e == null) {
                 return;
             }
-            const splittedTime = this.editorData.time.split(":");
+            const splittedTime = e.split(":");
 
             this.editorData.hours = splittedTime[0];
             this.editorData.minutes = splittedTime[1];
