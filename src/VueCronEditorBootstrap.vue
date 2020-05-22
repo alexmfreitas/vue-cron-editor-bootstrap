@@ -6,7 +6,7 @@
                 <b-form-input
                     type="number"
                     v-model="editorData.minuteInterval"
-                    class="small-input"
+                    v-bind:style="{ width: '50px' }"
                 />
                 <label class="mr-sm-2 ml-sm-2">{{ _$t("mminutes") }}</label>
             </b-form>
@@ -19,7 +19,7 @@
                         <b-form-input
                             type="number"
                             v-model="editorData.hourInterval"
-                            class="small-input"
+                            v-bind:style="{ width: '50px' }"
                         />
                         <label class="mr-sm-2 ml-sm-2">{{
                             _$t("hoursOnMinute")
@@ -29,7 +29,7 @@
                             max="59"
                             min="0"
                             v-model="editorData.minutes"
-                            class="small-input"
+                            v-bind:style="{ width: '50px' }"
                         />
                     </b-form>
                 </b-col>
@@ -43,7 +43,7 @@
                         <b-form-input
                             type="number"
                             v-model="editorData.dayInterval"
-                            class="small-input"
+                            v-bind:style="{ width: '50px' }"
                         />
                         <label class="mr-sm-2 ml-sm-2">{{
                             _$t("daysAt")
@@ -120,7 +120,7 @@
                         <b-form-input
                             type="number"
                             v-model="editorData.day"
-                            class="small-input"
+                            v-bind:style="{ width: '50px' }"
                         />
                         <label class="mr-sm-2 ml-sm-2">{{
                             _$t("dayOfEvery")
@@ -128,7 +128,7 @@
                         <b-form-input
                             type="number"
                             v-model="editorData.monthInterval"
-                            class="small-input"
+                            v-bind:style="{ width: '50px' }"
                         /><label class="mr-sm-2 ml-sm-2">{{
                             _$t("monthsAt")
                         }}</label>
@@ -231,9 +231,3 @@ export default {
     }
 };
 </script>
-
-<style lang="scss">
-.form-inline .form-control.small-input {
-    width: 50px;
-}
-</style>
