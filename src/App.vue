@@ -14,9 +14,7 @@
 
 <script>
 import VueCronEditorBootstrap from "./VueCronEditorBootstrap.vue";
-import {
-    BFormInput
-} from "bootstrap-vue";
+import { BFormInput } from "bootstrap-vue";
 export default {
     name: "App",
     components: {

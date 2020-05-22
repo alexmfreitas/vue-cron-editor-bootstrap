@@ -12551,12 +12551,15 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"11549ce1-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/VueCronEditorBootstrap.vue?vue&type=template&id=6c4d20a0&
-var VueCronEditorBootstrapvue_type_template_id_6c4d20a0_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('b-tabs',{attrs:{"content-class":"mt-3"},on:{"input":_vm.reset},model:{value:(_vm.activeTab),callback:function ($$v) {_vm.activeTab=$$v},expression:"activeTab"}},[_c('b-tab',{staticClass:"minutes-tab",attrs:{"value":0,"title":_vm._$t('minutes')}},[_c('b-form',{attrs:{"inline":""}},[_c('label',{staticClass:"mr-sm-2"},[_vm._v(_vm._s(_vm._$t("every")))]),_c('b-form-input',{style:({ width: '50px' }),attrs:{"type":"number"},model:{value:(_vm.editorData.minuteInterval),callback:function ($$v) {_vm.$set(_vm.editorData, "minuteInterval", $$v)},expression:"editorData.minuteInterval"}}),_c('label',{staticClass:"mr-sm-2 ml-sm-2"},[_vm._v(_vm._s(_vm._$t("mminutes")))])],1)],1),_c('b-tab',{staticClass:"hourly-tab",attrs:{"value":1,"title":_vm._$t('hourly')}},[_c('b-row',[_c('b-col',{attrs:{"size":"12"}},[_c('b-form',{attrs:{"inline":""}},[_c('label',{staticClass:"mr-sm-2"},[_vm._v(_vm._s(_vm._$t("every")))]),_c('b-form-input',{style:({ width: '50px' }),attrs:{"type":"number"},model:{value:(_vm.editorData.hourInterval),callback:function ($$v) {_vm.$set(_vm.editorData, "hourInterval", $$v)},expression:"editorData.hourInterval"}}),_c('label',{staticClass:"mr-sm-2 ml-sm-2"},[_vm._v(_vm._s(_vm._$t("hoursOnMinute")))]),_c('b-form-input',{style:({ width: '50px' }),attrs:{"type":"number","max":"59","min":"0"},model:{value:(_vm.editorData.minutes),callback:function ($$v) {_vm.$set(_vm.editorData, "minutes", $$v)},expression:"editorData.minutes"}})],1)],1)],1)],1),_c('b-tab',{staticClass:"daily-tab",attrs:{"value":2,"title":_vm._$t('daily')}},[_c('b-row',[_c('b-col',{attrs:{"size":"12"}},[_c('b-form',{attrs:{"inline":""}},[_c('label',{staticClass:"mr-sm-2"},[_vm._v(_vm._s(_vm._$t("every")))]),_c('b-form-input',{style:({ width: '50px' }),attrs:{"type":"number"},model:{value:(_vm.editorData.dayInterval),callback:function ($$v) {_vm.$set(_vm.editorData, "dayInterval", $$v)},expression:"editorData.dayInterval"}}),_c('label',{staticClass:"mr-sm-2 ml-sm-2"},[_vm._v(_vm._s(_vm._$t("daysAt")))]),_c('b-form-timepicker',{attrs:{"value":"dateTime","hour12":false},on:{"input":_vm.setDateTime},model:{value:(_vm.editorData.time),callback:function ($$v) {_vm.$set(_vm.editorData, "time", $$v)},expression:"editorData.time"}})],1)],1)],1)],1),_c('b-tab',{staticClass:"weekly-tab",attrs:{"value":3,"title":_vm._$t('weekly')}},[_c('b-row',[_c('b-col',{attrs:{"size":"12"}},[_c('b-form',{attrs:{"inline":""}},[_c('label',{staticClass:"mr-sm-2"},[_vm._v(_vm._s(_vm._$t("every")))]),_c('b-form-checkbox',{staticClass:"mr-sm-2",attrs:{"value":"0"},model:{value:(_vm.editorData.days),callback:function ($$v) {_vm.$set(_vm.editorData, "days", $$v)},expression:"editorData.days"}},[_vm._v(_vm._s(_vm._$t("sun")))]),_c('b-form-checkbox',{staticClass:"mr-sm-2",attrs:{"value":"1"},model:{value:(_vm.editorData.days),callback:function ($$v) {_vm.$set(_vm.editorData, "days", $$v)},expression:"editorData.days"}},[_vm._v(_vm._s(_vm._$t("mon")))]),_c('b-form-checkbox',{staticClass:"mr-sm-2",attrs:{"value":"2"},model:{value:(_vm.editorData.days),callback:function ($$v) {_vm.$set(_vm.editorData, "days", $$v)},expression:"editorData.days"}},[_vm._v(_vm._s(_vm._$t("tue")))]),_c('b-form-checkbox',{staticClass:"mr-sm-2",attrs:{"value":"3"},model:{value:(_vm.editorData.days),callback:function ($$v) {_vm.$set(_vm.editorData, "days", $$v)},expression:"editorData.days"}},[_vm._v(_vm._s(_vm._$t("wed")))]),_c('b-form-checkbox',{staticClass:"mr-sm-2",attrs:{"value":"4"},model:{value:(_vm.editorData.days),callback:function ($$v) {_vm.$set(_vm.editorData, "days", $$v)},expression:"editorData.days"}},[_vm._v(_vm._s(_vm._$t("thu")))]),_c('b-form-checkbox',{staticClass:"mr-sm-2",attrs:{"value":"5"},model:{value:(_vm.editorData.days),callback:function ($$v) {_vm.$set(_vm.editorData, "days", $$v)},expression:"editorData.days"}},[_vm._v(_vm._s(_vm._$t("fri")))]),_c('b-form-checkbox',{attrs:{"value":"6"},model:{value:(_vm.editorData.days),callback:function ($$v) {_vm.$set(_vm.editorData, "days", $$v)},expression:"editorData.days"}},[_vm._v(_vm._s(_vm._$t("sat")))]),_c('label',{staticClass:"mr-sm-2 ml-sm-2"},[_vm._v(_vm._s(_vm._$t("at")))]),_c('b-form-timepicker',{attrs:{"hour12":false},model:{value:(_vm.editorData.time),callback:function ($$v) {_vm.$set(_vm.editorData, "time", $$v)},expression:"editorData.time"}})],1)],1)],1)],1),_c('b-tab',{staticClass:"monthly-tab",attrs:{"value":4,"title":_vm._$t('monthly')}},[_c('b-row',[_c('b-col',{attrs:{"size":"12"}},[_c('b-form',{attrs:{"inline":""}},[_c('label',{staticClass:"mr-sm-2"},[_vm._v(_vm._s(_vm._$t("onThe")))]),_c('b-form-input',{style:({ width: '50px' }),attrs:{"type":"number"},model:{value:(_vm.editorData.day),callback:function ($$v) {_vm.$set(_vm.editorData, "day", $$v)},expression:"editorData.day"}}),_c('label',{staticClass:"mr-sm-2 ml-sm-2"},[_vm._v(_vm._s(_vm._$t("dayOfEvery")))]),_c('b-form-input',{style:({ width: '50px' }),attrs:{"type":"number"},model:{value:(_vm.editorData.monthInterval),callback:function ($$v) {_vm.$set(_vm.editorData, "monthInterval", $$v)},expression:"editorData.monthInterval"}}),_c('label',{staticClass:"mr-sm-2 ml-sm-2"},[_vm._v(_vm._s(_vm._$t("monthsAt")))]),_c('b-form-timepicker',{attrs:{"hour12":false},model:{value:(_vm.editorData.time),callback:function ($$v) {_vm.$set(_vm.editorData, "time", $$v)},expression:"editorData.time"}})],1)],1)],1)],1),_c('b-tab',{staticClass:"advanced-tab",attrs:{"value":4,"title":_vm._$t('advanced')}},[_c('b-row',[_c('b-col',{attrs:{"size":"12"}},[_c('b-form',{attrs:{"inline":""}},[_c('label',{staticClass:"mr-sm-2"},[_vm._v(_vm._s(_vm._$t("cronExpression")))]),_c('b-form-input',{model:{value:(_vm.editorData.cronExpression),callback:function ($$v) {_vm.$set(_vm.editorData, "cronExpression", $$v)},expression:"editorData.cronExpression"}}),_c('label',{staticClass:"mr-sm-2 ml-sm-2"},[_vm._v(" "+_vm._s(_vm.explanation)+" ")])],1)],1)],1)],1)],1)}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"11549ce1-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/VueCronEditorBootstrap.vue?vue&type=template&id=4e9859be&
+var VueCronEditorBootstrapvue_type_template_id_4e9859be_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('b-tabs',{attrs:{"content-class":"mt-3"},on:{"input":_vm.reset},model:{value:(_vm.activeTab),callback:function ($$v) {_vm.activeTab=$$v},expression:"activeTab"}},[_c('b-tab',{staticClass:"minutes-tab",attrs:{"value":0,"title":_vm._$t('minutes')}},[_c('b-form',{attrs:{"inline":""}},[_c('label',{staticClass:"mr-sm-2"},[_vm._v(_vm._s(_vm._$t("every")))]),_c('b-form-input',{style:({ width: '80px' }),attrs:{"type":"number"},model:{value:(_vm.editorData.minuteInterval),callback:function ($$v) {_vm.$set(_vm.editorData, "minuteInterval", $$v)},expression:"editorData.minuteInterval"}}),_c('label',{staticClass:"mr-sm-2 ml-sm-2"},[_vm._v(_vm._s(_vm._$t("mminutes")))])],1)],1),_c('b-tab',{staticClass:"hourly-tab",attrs:{"value":1,"title":_vm._$t('hourly')}},[_c('b-row',[_c('b-col',{attrs:{"size":"12"}},[_c('b-form',{attrs:{"inline":""}},[_c('label',{staticClass:"mr-sm-2"},[_vm._v(_vm._s(_vm._$t("every")))]),_c('b-form-input',{style:({ width: '80px' }),attrs:{"type":"number"},model:{value:(_vm.editorData.hourInterval),callback:function ($$v) {_vm.$set(_vm.editorData, "hourInterval", $$v)},expression:"editorData.hourInterval"}}),_c('label',{staticClass:"mr-sm-2 ml-sm-2"},[_vm._v(_vm._s(_vm._$t("hoursOnMinute")))]),_c('b-form-input',{style:({ width: '80px' }),attrs:{"type":"number","max":"59","min":"0"},model:{value:(_vm.editorData.minutes),callback:function ($$v) {_vm.$set(_vm.editorData, "minutes", $$v)},expression:"editorData.minutes"}})],1)],1)],1)],1),_c('b-tab',{staticClass:"daily-tab",attrs:{"value":2,"title":_vm._$t('daily')}},[_c('b-row',[_c('b-col',{attrs:{"size":"12"}},[_c('b-form',{attrs:{"inline":""}},[_c('label',{staticClass:"mr-sm-2"},[_vm._v(_vm._s(_vm._$t("every")))]),_c('b-form-input',{style:({ width: '80px' }),attrs:{"type":"number"},model:{value:(_vm.editorData.dayInterval),callback:function ($$v) {_vm.$set(_vm.editorData, "dayInterval", $$v)},expression:"editorData.dayInterval"}}),_c('label',{staticClass:"mr-sm-2 ml-sm-2"},[_vm._v(_vm._s(_vm._$t("daysAt")))]),_c('b-form-timepicker',{attrs:{"value":_vm.dateTime,"hour12":false},on:{"input":_vm.setDateTime}})],1)],1)],1)],1),_c('b-tab',{staticClass:"weekly-tab",attrs:{"value":3,"title":_vm._$t('weekly')}},[_c('b-row',[_c('b-col',{attrs:{"size":"12"}},[_c('b-form',{attrs:{"inline":""}},[_c('label',{staticClass:"mr-sm-2"},[_vm._v(_vm._s(_vm._$t("every")))]),_c('b-form-checkbox',{staticClass:"mr-sm-2",attrs:{"value":"0","switch":""},model:{value:(_vm.editorData.days),callback:function ($$v) {_vm.$set(_vm.editorData, "days", $$v)},expression:"editorData.days"}},[_vm._v(_vm._s(_vm._$t("sun")))]),_c('b-form-checkbox',{staticClass:"mr-sm-2",attrs:{"value":"1","switch":""},model:{value:(_vm.editorData.days),callback:function ($$v) {_vm.$set(_vm.editorData, "days", $$v)},expression:"editorData.days"}},[_vm._v(_vm._s(_vm._$t("mon")))]),_c('b-form-checkbox',{staticClass:"mr-sm-2",attrs:{"value":"2","switch":""},model:{value:(_vm.editorData.days),callback:function ($$v) {_vm.$set(_vm.editorData, "days", $$v)},expression:"editorData.days"}},[_vm._v(_vm._s(_vm._$t("tue")))]),_c('b-form-checkbox',{staticClass:"mr-sm-2",attrs:{"value":"3","switch":""},model:{value:(_vm.editorData.days),callback:function ($$v) {_vm.$set(_vm.editorData, "days", $$v)},expression:"editorData.days"}},[_vm._v(_vm._s(_vm._$t("wed")))]),_c('b-form-checkbox',{staticClass:"mr-sm-2",attrs:{"value":"4","switch":""},model:{value:(_vm.editorData.days),callback:function ($$v) {_vm.$set(_vm.editorData, "days", $$v)},expression:"editorData.days"}},[_vm._v(_vm._s(_vm._$t("thu")))]),_c('b-form-checkbox',{staticClass:"mr-sm-2",attrs:{"value":"5","switch":""},model:{value:(_vm.editorData.days),callback:function ($$v) {_vm.$set(_vm.editorData, "days", $$v)},expression:"editorData.days"}},[_vm._v(_vm._s(_vm._$t("fri")))]),_c('b-form-checkbox',{attrs:{"value":"6","switch":""},model:{value:(_vm.editorData.days),callback:function ($$v) {_vm.$set(_vm.editorData, "days", $$v)},expression:"editorData.days"}},[_vm._v(_vm._s(_vm._$t("sat")))]),_c('label',{staticClass:"mr-sm-2 ml-sm-2"},[_vm._v(_vm._s(_vm._$t("at")))]),_c('b-form-timepicker',{attrs:{"value":_vm.dateTime,"hour12":false},on:{"input":_vm.setDateTime}})],1)],1)],1)],1),_c('b-tab',{staticClass:"monthly-tab",attrs:{"value":4,"title":_vm._$t('monthly')}},[_c('b-row',[_c('b-col',{attrs:{"size":"12"}},[_c('b-form',{attrs:{"inline":""}},[_c('label',{staticClass:"mr-sm-2"},[_vm._v(_vm._s(_vm._$t("onThe")))]),_c('b-form-input',{style:({ width: '80px' }),attrs:{"type":"number"},model:{value:(_vm.editorData.day),callback:function ($$v) {_vm.$set(_vm.editorData, "day", $$v)},expression:"editorData.day"}}),_c('label',{staticClass:"mr-sm-2 ml-sm-2"},[_vm._v(_vm._s(_vm._$t("dayOfEvery")))]),_c('b-form-input',{style:({ width: '80px' }),attrs:{"type":"number"},model:{value:(_vm.editorData.monthInterval),callback:function ($$v) {_vm.$set(_vm.editorData, "monthInterval", $$v)},expression:"editorData.monthInterval"}}),_c('label',{staticClass:"mr-sm-2 ml-sm-2"},[_vm._v(_vm._s(_vm._$t("monthsAt")))]),_c('b-form-timepicker',{attrs:{"value":_vm.dateTime,"hour12":false},on:{"input":_vm.setDateTime}})],1)],1)],1)],1),_c('b-tab',{staticClass:"advanced-tab",attrs:{"value":4,"title":_vm._$t('advanced')}},[_c('b-row',[_c('b-col',{attrs:{"size":"12"}},[_c('b-form',{attrs:{"inline":""}},[_c('label',{staticClass:"mr-sm-2"},[_vm._v(_vm._s(_vm._$t("cronExpression")))]),_c('b-form-input',{model:{value:(_vm.editorData.cronExpression),callback:function ($$v) {_vm.$set(_vm.editorData, "cronExpression", $$v)},expression:"editorData.cronExpression"}}),_c('label',{staticClass:"mr-sm-2 ml-sm-2"},[_vm._v(" "+_vm._s(_vm.explanation)+" ")])],1)],1)],1)],1)],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/VueCronEditorBootstrap.vue?vue&type=template&id=6c4d20a0&
+// CONCATENATED MODULE: ./src/VueCronEditorBootstrap.vue?vue&type=template&id=4e9859be&
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
+var es_array_concat = __webpack_require__("99af");
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.find.js
 var es_array_find = __webpack_require__("7db0");
@@ -12649,9 +12652,6 @@ function _objectSpread2(target) {
 
   return target;
 }
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
-var es_array_concat = __webpack_require__("99af");
-
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.join.js
 var es_array_join = __webpack_require__("a15b");
 
@@ -12971,6 +12971,8 @@ var initialData = {
         return;
       }
 
+      var tabData = parseExpression(this.value);
+      if (tabKey == tabData.type) return;
       this.$data.editorData = Object.assign({}, initialData[tabKey]);
 
       this.__updateCronExpression(initialData[tabKey]);
@@ -22195,6 +22197,17 @@ var BFormCheckbox = /*#__PURE__*/vue.extend({
 
 
 
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -22414,9 +22427,7 @@ var BFormCheckbox = /*#__PURE__*/vue.extend({
   },
   computed: {
     dateTime: function dateTime() {
-      var dateTime = new Date();
-      dateTime.setHours(this.editorData.hours);
-      dateTime.setMinutes(this.editorData.minutes);
+      var dateTime = "".concat(this.editorData.hours, ":").concat(this.editorData.minutes, ":00");
       return dateTime;
     }
   },
@@ -22433,7 +22444,7 @@ var BFormCheckbox = /*#__PURE__*/vue.extend({
         return;
       }
 
-      var splittedTime = this.editorData.time.split(":");
+      var splittedTime = e.split(":");
       this.editorData.hours = splittedTime[0];
       this.editorData.minutes = splittedTime[1];
     }
@@ -22546,7 +22557,7 @@ function normalizeComponent (
 
 var component = normalizeComponent(
   src_VueCronEditorBootstrapvue_type_script_lang_js_,
-  VueCronEditorBootstrapvue_type_template_id_6c4d20a0_render,
+  VueCronEditorBootstrapvue_type_template_id_4e9859be_render,
   staticRenderFns,
   false,
   null,

@@ -120,6 +120,9 @@ export default Vue.extend({
                 return;
             }
 
+            const tabData = parseExpression(this.value);
+            if (tabKey == tabData.type) return;
+
             this.$data.editorData = Object.assign({}, initialData[tabKey]);
             this.__updateCronExpression(initialData[tabKey]);
         }
