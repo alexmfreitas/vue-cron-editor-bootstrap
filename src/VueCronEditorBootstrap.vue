@@ -170,8 +170,6 @@
 
 <script>
 import vueCronEditorMixin from "./core/vueCronEditorMixin";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
 import {
     BTabs,
     BTab,
