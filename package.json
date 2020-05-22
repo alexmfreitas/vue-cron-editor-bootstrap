@@ -1,6 +1,6 @@
 {
   "name": "vue-cron-editor-bootstrap",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "main": "dist/vueCronEditorBootstrap.umd.js",
   "module": "dist/vueCronEditorBootstrap.esm.js",
@@ -42,5 +42,11 @@
     "standard-version": "^8.0.0",
     "typescript": "~3.5.3",
     "vue-template-compiler": "^2.6.10"
+  },
+  "author": "alexmfreitas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmfreitas/vue-cron-editor-bootstrap.git"
   }
 }
