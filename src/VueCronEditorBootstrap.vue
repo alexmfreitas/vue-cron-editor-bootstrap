@@ -6,7 +6,7 @@
                 <b-form-input
                     type="number"
                     v-model="editorData.minuteInterval"
-                    v-bind:style="{ width: '50px' }"
+                    v-bind:style="{ width: '80px' }"
                 />
                 <label class="mr-sm-2 ml-sm-2">{{ _$t("mminutes") }}</label>
             </b-form>
@@ -19,7 +19,7 @@
                         <b-form-input
                             type="number"
                             v-model="editorData.hourInterval"
-                            v-bind:style="{ width: '50px' }"
+                            v-bind:style="{ width: '80px' }"
                         />
                         <label class="mr-sm-2 ml-sm-2">{{
                             _$t("hoursOnMinute")
@@ -29,7 +29,7 @@
                             max="59"
                             min="0"
                             v-model="editorData.minutes"
-                            v-bind:style="{ width: '50px' }"
+                            v-bind:style="{ width: '80px' }"
                         />
                     </b-form>
                 </b-col>
@@ -43,7 +43,7 @@
                         <b-form-input
                             type="number"
                             v-model="editorData.dayInterval"
-                            v-bind:style="{ width: '50px' }"
+                            v-bind:style="{ width: '80px' }"
                         />
                         <label class="mr-sm-2 ml-sm-2">{{
                             _$t("daysAt")
@@ -129,7 +129,7 @@
                         <b-form-input
                             type="number"
                             v-model="editorData.day"
-                            v-bind:style="{ width: '50px' }"
+                            v-bind:style="{ width: '80px' }"
                         />
                         <label class="mr-sm-2 ml-sm-2">{{
                             _$t("dayOfEvery")
@@ -137,7 +137,7 @@
                         <b-form-input
                             type="number"
                             v-model="editorData.monthInterval"
-                            v-bind:style="{ width: '50px' }"
+                            v-bind:style="{ width: '80px' }"
                         /><label class="mr-sm-2 ml-sm-2">{{
                             _$t("monthsAt")
                         }}</label>
